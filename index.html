@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flowershop. Delivery. E-commerce">
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=0401e6a7-9541-4480-8a54-eed6229743ea&lang=ru_RU&_v=20231213145009"></script> -->
+    <link rel="stylesheet" href="css/style.min.css?_v=20231213145009">
+    <title>Главная</title>
+</head>
+  <body>
+    <div class="wrapper">
+
+      <header class="header" id="header">
+
+    <div class="header__top top-header">
+        <div class="top-header__container">
+            <nav class="top-header__menu menu-top-header">
+                <ul data-da="menu__body,0,991.98" class="menu-top-header__list">
+                    <li class="menu-top-header__item"><a href="#about" class="menu-top-header__link"><span>О нас</span></a></li>
+                    <li class="menu-top-header__item menu-top-header__item_catalog"><a href="catalog.html"  class="menu-top-header__link menu-top-header__link_catalog _icon-arrowdown"><span>Каталог</span></a></li>
+                    <li class="menu-top-header__item"><a href="#payment" class="menu-top-header__link"><span>Оплата и доставка</span></a></li>
+                    <!-- <li class="menu-top-header__item"><a href="catalog.html" class="menu-top-header__link"><span>Каталог</span></a></li> -->
+                    <li class="menu-top-header__item"><a href="#contacts" class="menu-top-header__link"><span>Контакты</span></a></li>
+                </ul>
+            </nav>
+            <button data-popup="#login" class="top-header__user _icon-user popup-link" aria-label="Войти в личный кабинет"><span>Личный кабинет</span></button>
+
+<div id="login" class="popup popup_login">
+    <div class="popup_login__body popup__body">
+        <div class="popup_login__content popup__content">
+            <button class="popup_login__close popup__close close-popup">Х</button>
+            <div class="popup_login__title popup__title">Вход</div>
+            <form>
+                <div class="popup_login__email">
+                    <label for="email" class="popup_login__text popup__text">Имя пользователя или Email</label>
+                    <input id="email" type="text" autocomplete="on">
+                </div>
+                <div class="popup_login__password">
+                    <label for="password" class="popup_login__text popup__text">Пароль</label>
+                    <input id="password" type="password">
+                    <a href="#!" class="popup_login__link">Забыли пароль?</a>
+                </div>
+                <a href="personal.html" class="popup_login__btn popup__button button">Войти</a>
+            </form>
+            <a href="#!" class="popup_login__link">Регистрация</a>
+        </div>
+    </div>
+</div>
+
+            <nav hidden class="menu">
+                <button type="button" class="menu__icon icon-menu" aria-label="Кнопка открытия меню"><span></span></button>
+                <div class="menu__body"></div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="header__body body-header">
+        <div class="body-header__container">
+            <a href="index.html" class="body-header__logo">
+                <img class="body-header__logo-img" src="img/icons/logo.svg" alt="logo" width="140" height="77">
+            </a>
+            <div data-da="catalog-header__container,0,479.98" class="body-header__search">
+                <form action="#" class="search-header">
+                    <button type="submit" class="search-header__button _icon-search" aria-label="Search"></button>
+                    <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Поиск" class="search-header__input">
+                </form>
+            </div>
+            <div class="body-header__actions actions-header">
+                <a href="#contacts" data-scroll="contacts" class="actions-header__location _icon-location"><span>Москва</span></a>
+                <div data-da="top-header__container,0,991.98" class="actions-header__phones phones-header">
+                    <div data-spollers class="phones-header__items">
+                        <div class="phones-header__item">
+                            <a href="tel:88007774967" class="phones-header__phone" aria-label="Позвонить нам по номеру 8-800-777-49-67"><span>8-800-777-49-67</span></a>
+                            <button type="button" data-spoller class="phones-header__arrow _icon-arrowdown" aria-label="Открыть список номеров"></button>
+                            <ul class="phones-header__list">
+                                <li><a href="tel:88007774968" class="phones-header__phone">8-800-777-49-68</a></li>
+                                <li><a href="tel:88007774969" class="phones-header__phone">8-800-777-49-69</a></li>
+                                <li><a href="tel:88007774970" class="phones-header__phone">8-800-777-49-70</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button type="button" data-popup="#callback" class="phones-header__callback popup-link">Заказать звонок</button>
+
+<div id="callback" class="popup popup_callback">
+    <div class="popup_callback__body popup__body">
+        <div class="popup_callback__content popup__content">
+            <button class="popup_callback__close popup__close close-popup">Х</button>
+            <div class="popup_callback__title popup__title">Заказать обратный звонок</div>
+            <form>
+                <input type="text" placeholder="Ваше имя" name="callback-name">
+                <input type="text" placeholder="Номер телефон" name="callback-phone" required="">
+                <button class="popup_callback__button popup__button button" type="submit">Отправить</button>
+            </form>
+            <p>Нажимая на кнопку «Отправить», вы принимаете <a href="#!" class="popup_callback__link popup__link">соглашение на обработку персональных данных.</a></p>
+        </div>
+
+    </div>
+</div>
+
+                </div>
+                <a href="catalog.html" data-da="top-header__container,2,991.98" class="actions-header__favourite _icon-favourite" aria-label="Перейти в избранное"></a>
+                <div data-da="top-header__container,2,991.98">
+                    <a href="#!"  data-popup="#cart" class="actions-header__cart cart-header popup-link">
+                        <div class="cart-header__icon _icon-cart">
+                            <img class="cart-header__icon-black" src="img/icons/cart-black.svg" alt="cart" width="32" height="34">
+                            <img class="cart-header__icon-white" src="img/icons/cart-white.svg" alt="cart" width="32" height="34">
+                            <span>0</span>
+                        </div>
+                        <div class="cart-header__body">
+                            <!-- <div class="cart-header__sum">0 р.</div> -->
+                            <div href="#!" class="cart-header__link">Оформить заказ</div>
+                        </div>
+                    </a>
+
+<div id="cart" class="popup popup_cart">
+    <div class="popup_cart__body popup__body">
+        <div class="popup_cart__content popup__content">
+            <button class="popup_cart__close popup__close close-popup">Х</button>
+            <div class="popup_cart__title popup__title">Оформление заказа</div>
+            <div class="popup_cart__block">
+                <div class="popup_cart__items">
+                    <!-- <div class="popup_cart__item">                 
+                        <div class="popup_cart__image">
+                            <img src="../img/products-images/mono/herbers.jpg" alt="">
+                        </div>
+                        <div class="popup_cart__desc">Lorem ipsum.</div>
+                        <div class="popup_cart__quantity quantity quantity-popup-cart ">
+                            <button type="button" class="quantity-popup-cart__button quantity__button quantity__button_minus" data-sign="minus">-</button>
+                            <form class="quantity-popup-cart__input quantity__input">
+                                <input  type="text" min="1" value="1">
+                            </form>                             
+                            <button type="button" class="quantity-popup-cart__button quantity__button quantity__button_plus" data-sign="plus">+</button> 
+                        </div>
+                        <div class="popup_cart__sum-block">
+                            <div class="popup_cart__sum">4499.00<span>p.</span></div>
+                        </div>                      
+                        <buttom class="popup_cart__remove">x</buttom>  
+                    </div>
+                    
+                    <div class="popup_cart__item">                     
+                            <div class="popup_cart__image">
+                                <img src="../img/products-images/mono/herbers.jpg" alt="">
+                            </div>
+                            <div class="popup_cart__desc">Lorem ipsum.</div>
+                            <div class="popup_cart__quantity quantity quantity-popup-cart ">
+                                <button type="button" class="quantity-popup-cart__button quantity__button quantity__button_minus" data-sign="minus">-</button>
+                                <form class="quantity-popup-cart__input quantity__input">
+                                    <input  type="text" min="1" value="1">
+                                </form>                             
+                                <button type="button" class="quantity-popup-cart__button quantity__button quantity__button_plus" data-sign="plus">+</button> 
+                            </div>
+                            <div class="popup_cart__sum-block">
+                                <div class="popup_cart__sum"> 4499.00 <span> p.</span></div>
+                            </div>                           
+                            <buttom class="popup_cart__remove">x</buttom>  
+                        </div> -->
+                </div>
+                <div class="popup_cart__lower-part">
+                    <div class="popup_cart__delivery">
+                        <div class="popup_cart__delivery-title">Доставка</div>
+                        <div class="popup_cart__checkbox">
+                            <input id="c_10" class="checkbox__input" type="radio" value="1" name="delivery">
+                            <label for="c_10" class="checkbox__label"><span class="checkbox__text">Доставка курьером 200р.</span></label>
+                        </div>
+                        <div class="popup_cart__checkbox">
+                            <input id="c_11" checked class="checkbox__input" type="radio" value="2" name="delivery">
+                            <label for="c_11" class="checkbox__label"><span class="checkbox__text">Самовывоз</span></label>
+                        </div>
+                    </div>
+                    <div class="popup_cart__total">Итого: <span></span></div>
+                    <button type="button" class="popup_cart__button button">Оформить заказ</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="notice" data-popup="self-closing" class="popup popup_notice">
+    <div class="popup_notice__body popup__body">
+        <div class="popup_notice__content popup__content">
+            <div class="popup_notice__title popup__title">Товар добавлен в корзину</div>
+            <div class="popup_notice__item">
+                    <div class="popup_notice__image">
+                        <!-- <img src="" alt=""> -->
+                    </div>
+                    <div class="popup_notice__text">
+                        <div class="popup_notice__title"></div>
+                        <div class="popup_notice__desc"></div>
+                    </div>
+                    <div class="popup_notice__price"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header__catalog catalog-header">
+        <div class="catalog-header__container">
+            <nav class="catalog-header__menu menu-catalog">
+                <button type="button" class="menu-catalog__back">
+                    <img src="img/icons/arrow-left.svg" alt="arrow-left" width="20" height="20">Назад
+                </button>
+                <ul class="menu-catalog__list">
+                    <li class="menu-catalog__item"><button data-parent="1" class="menu-catalog__link">Монобукеты</button></li>
+                    <li class="menu-catalog__item"><button data-parent="2" class="menu-catalog__link">Авторские букеты</button></li>
+                    <li class="menu-catalog__item"><button data-parent="3" class="menu-catalog__link">Свадебные букеты</button></li>
+                    <li class="menu-catalog__item"><button data-parent="4" class="menu-catalog__link">Композиции</button></li>
+                    <li class="menu-catalog__item"><button data-parent="5" class="menu-catalog__link">Сопутствующие товары</button></li>
+                </ul>
+                <div class="menu-catalog__sub-menu sub-menu-catalog">
+                    <button type="button" class="sub-menu-catalog__back">
+                        <img src="img/icons/arrow-left.svg" alt="arrow-left" width="20" height="20">Назад
+                    </button>
+                    <div class="sub-menu-catalog__container">
+                        <div hidden data-submenu="1" class="sub-menu-catalog__block">
+                            <div class="sub-menu-catalog__category">
+                                <a href="catalog.html" class="sub-menu-catalog__link-category">Розы</a>
+                            </div>
+                            <div class="sub-menu-catalog__category">
+                                <a href="catalog.html" class="sub-menu-catalog__link-category">Гортензии</a>
+                            </div>
+                            <div class="sub-menu-catalog__category">
+                                <a href="catalog.html" class="sub-menu-catalog__link-category">Тюльпаны</a>
+                            </div>
+                            <div class="sub-menu-catalog__category">
+                                <a href="catalog.html" class="sub-menu-catalog__link-category">Лилии</a>
+                            </div>
+                            <div class="sub-menu-catalog__category">
+                                <a href="catalog.html" class="sub-menu-catalog__link-category">Хризантемы</a>
+                            </div>
+                            <div class="sub-menu-catalog__category">
+                                <a href="catalog.html" class="sub-menu-catalog__link-category">Пионы</a>
+                            </div>
+                            <div class="sub-menu-catalog__category">
+                                <a href="catalog.html" class="sub-menu-catalog__link-category">Подсолнухи</a>
+                            </div>
+                            <div class="sub-menu-catalog__category">
+                                <a href="catalog.html" class="sub-menu-catalog__link-category">Орхидеи</a>
+                            </div>
+                        </div>
+                        <div hidden data-submenu="2" class="sub-menu-catalog__block">
+                            <div class="sub-menu-catalog__category">
+                                <a href="catalog.html" class="sub-menu-catalog__link-category">до 2000р.</a>
+                            </div>
+                            <div class="sub-menu-catalog__category">
+                                <a href="catalog.html" class="sub-menu-catalog__link-category">от 2000 до 4000р.</a>
+                            </div>
+                            <div class="sub-menu-catalog__category">
+                                <a href="catalog.html" class="sub-menu-catalog__link-category">от 4000р.</a>
+                            </div>
+
+                        </div>
+                        <div hidden data-submenu="3" class="sub-menu-catalog__block">
+                            <div class="sub-menu-catalog__category">
+                                <a href="catalog.html" class="sub-menu-catalog__link-category">Каллы</a>
+                            </div>
+                            <div class="sub-menu-catalog__category">
+                                <a href="catalog.html" class="sub-menu-catalog__link-category">Гортензии</a>
+                            </div>
+                            <div class="sub-menu-catalog__category">
+                                <a href="catalog.html" class="sub-menu-catalog__link-category">Лилии</a>
+                            </div>
+                            <div class="sub-menu-catalog__category">
+                                <a href="catalog.html" class="sub-menu-catalog__link-category">Розы</a>
+                            </div>
+                            <div class="sub-menu-catalog__category">
+                                <a href="catalog.html" class="sub-menu-catalog__link-category">Орхидеи</a>
+                            </div>
+                            <div class="sub-menu-catalog__category">
+                                <a href="catalog.html" class="sub-menu-catalog__link-category">Микс</a>
+                            </div>
+
+                        </div>
+                        <div hidden data-submenu="4" class="sub-menu-catalog__block">
+                            <div class="sub-menu-catalog__category">
+                                <a href="catalog.html" class="sub-menu-catalog__link-category">В коробке</a>
+                            </div>
+                            <div class="sub-menu-catalog__category">
+                                <a href="catalog.html" class="sub-menu-catalog__link-category">В корзине</a>
+                            </div>
+                        </div>
+                        <div hidden data-submenu="5" class="sub-menu-catalog__block">
+                            <div class="sub-menu-catalog__category">
+                                <a href="catalog.html" class="sub-menu-catalog__link-category">Фруктовые наборы</a>
+                            </div>
+                            <div class="sub-menu-catalog__category">
+                                <a href="catalog.html" class="sub-menu-catalog__link-category">Открытки</a>
+                            </div>
+                            <div class="sub-menu-catalog__category">
+                                <a href="catalog.html" class="sub-menu-catalog__link-category">Мягкие игрушки</a>
+                            </div>
+                            <div class="sub-menu-catalog__category">
+                                <a href="catalog.html" class="sub-menu-catalog__link-category">Сладкие подарки</a>
+                            </div>
+                            <div class="sub-menu-catalog__category">
+                                <a href="catalog.html" class="sub-menu-catalog__link-category">Воздушные шары</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+</header>
+
+      <main class="page page_home">
+
+        <section class="page__main-block main-block">
+          <div class="main-block__container">
+            <div class="main-block__body">
+
+              <div class="swiper main-block__slider">
+                <div class="main-block__swiper swiper-wrapper">
+
+                  <div class="main-block__slide slide-main-block swiper-slide">
+                    <div  class="slide-main-block__content">
+                      <h2 data-swiper-parallax="-100" class="slide-main-block__title">Экспресс-букет</h2>
+                      <div data-swiper-parallax="-150" class="slide-main-block__sub-title">Интернет-магазин цветов</div>
+                      <div data-swiper-parallax="-200" class="slide-main-block__text">
+                        Как сделать приятное близкому человеку, поздравить родственника или руководителя с юбилеем?<br>Конечно, заказать букет цветов с доставкой! <a href="catalog.html" class="slide-main-block__button button">Открыть каталог</a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="main-block__slide slide-main-block swiper-slide">
+                    <div  class="slide-main-block__content">
+                      <h2 data-swiper-parallax="-100" class="slide-main-block__title">Экспресс-букет</h2>
+                      <div data-swiper-parallax="-150" class="slide-main-block__sub-title">Интернет-магазин цветов</div>
+                      <div data-swiper-parallax="-200" class="slide-main-block__text">
+                        Скидка 15% на первый заказ!
+                        <a href="catalog.html" class="slide-main-block__button button">Открыть каталог</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="main-block__slide slide-main-block swiper-slide">
+                    <div  class="slide-main-block__content">
+                      <h2 data-swiper-parallax="-100" class="slide-main-block__title">Экспресс-букет</h2>
+                      <div data-swiper-parallax="-150" class="slide-main-block__sub-title">Интернет-магазин цветов</div>
+                      <div data-swiper-parallax="-200" class="slide-main-block__text">
+                        Мы доставим радость вашим близким.<br>Выбирайте все, что душе угодно.
+                        <a href="catalog.html" class="slide-main-block__button button">Открыть каталог</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="main-block__controll controll-main-block swiper-pagination">
+                  <div class="controll-main-block__dots"></div>
+                  <div class="controll-main-block__fraction fraction-controll">
+                    <span class="fraction-controll__current">01</span> / <span class="fraction-controll__all">0</span>
+                  </div>
+                </div>
+
+              </div>
+              <div class="main-block__media media-main-block">
+                <div class="media-main-block__body">
+                  <div class="media-main-block__image">
+                    <!-- <picture>                        
+                        <source type="image/png" srcset="img/mainpage/main-block/flowers-300.png 1x, img/mainpage/main-block/flowers-511.png 2x" media="(max-width: 395px)">                        
+                        <source type="image/png" srcset="img/mainpage/main-block/flowers-511.png 1x, img/mainpage/main-block/flowers-1022.png 2x"> 
+                        <img src="img/mainpage/main-block/flowers-511.png" width="460" height="450" alt="flowers">
+                    </picture> -->
+                    <!-- <img src="img/mainpage/main-block/flowers-511.png" width="460" height="450" alt="flowers"
+                          srcset="img/mainpage/main-block/flowers-300.png 300w, 
+                                  img/mainpage/main-block/flowers-511.png 511w,
+                                  img/mainpage/main-block/flowers-1022.png 1022w"
+            
+                          sizes="
+                                (min-resolution: 2dppx) and (max-width: 395px) 511px,
+                                (min-resolution: 2dppx) and (min-width: 396px) 1022px,
+
+                                (min-resolution: 1dppx) and (max-width: 395px) 300px,
+                                (min-resolution: 1dppx) and (min-width: 396px) 511px"> -->
+                        <img src="img/mainpage/main-block/flowers-511.png" srcset="img/mainpage/main-block/flowers-511.png 1.5x, img/mainpage/main-block/flowers-1022.png 2x" width="460" height="450" alt="flowers">
+                  </div>
+
+                  <div class="media-main-block__tips">
+                    <a href="#payment" data-tippy-content="как сделать заказ" class="media-main-block__tip media-main-block__tip_1"><span>+</span></a>
+                    <a href="#info" data-tippy-content="что выбрать" class="media-main-block__tip media-main-block__tip_2"><span>+</span></a>
+                    <a href="#payment" data-tippy-content="как оплатить" class="media-main-block__tip media-main-block__tip_3"><span>+</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main-block__advantages advantages-main">
+              <div class="advantages-main__item">
+                <div class="advantages-main__icon">
+                  <img src="img/mainpage/icons/1.svg" alt="Иконка галочки" width="64" height="64">
+                </div>
+                <div class="advantages-main__text">Гарантия 100% возврата
+                  денежных средств</div>
+              </div>
+              <div class="advantages-main__item">
+                <div class="advantages-main__icon">
+                  <img src="img/mainpage/icons/2.svg" alt="Иконка грузовика" width="92" height="60">
+                </div>
+                <div class="advantages-main__text">Доставка по России,
+                  Казахстану и Белоруссии
+                </div>
+              </div>
+              <div class="advantages-main__item">
+                <div class="advantages-main__icon">
+                  <img src="img/mainpage/icons/3.svg" alt="Иконка списка" width="74" height="78">
+                </div>
+                <div class="advantages-main__text">Возможность оформления
+                  заказа без регистрации
+                </div>
+              </div>
+              <div class="advantages-main__item">
+                <div class="advantages-main__icon">
+                  <img src="img/mainpage/icons/4.svg" alt="Иконка процента" width="67" height="66">
+                </div>
+                <div class="advantages-main__text">Скидки постоянным
+                  покупателям
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- <section class="page__catalog-cards catalog-cards">
+          <div class="catalog-cards__container">
+
+            <div class="catalog-cards__item item-catalog-cards">
+              <div class="item-catalog-cards__body">
+                <h3 class="item-catalog-cards__title">
+                  <a href="" class="item-catalog-cards__link-title">Монобукеты</a>
+                </h3>
+                <ul class="item-catalog-cards__list">
+                  <li class="item-catalog-cards__item"><a href="" class="item-catalog-cards__link">Розы</a></li>
+                  <li class="item-catalog-cards__item"><a href="" class="item-catalog-cards__link">Пионы</a></li>
+                  <li class="item-catalog-cards__item"><a href="" class="item-catalog-cards__link">Герберы</a></li>
+                  <li class="item-catalog-cards__item"><a href="" class="item-catalog-cards__link">Смотреть все</a></li>
+                </ul>                
+              </div>
+              <div class="item-catalog-cards__image">
+                <img src="img/mainpage/catalog-cards/01.png" alt="букет">
+              </div>
+            </div>
+
+            <div class="catalog-cards__item item-catalog-cards">
+              <div class="item-catalog-cards__body">
+                <h3 class="item-catalog-cards__title">
+                  <a href="" class="item-catalog-cards__link-title">Авторские букеты</a>
+                </h3>
+                <ul class="item-catalog-cards__list">
+                  <li class="item-catalog-cards__item"><a href="" class="item-catalog-cards__link">Розы</a></li>
+                  <li class="item-catalog-cards__item"><a href="" class="item-catalog-cards__link">Пионы</a></li>
+                  <li class="item-catalog-cards__item"><a href="" class="item-catalog-cards__link">Герберы</a></li>
+                  <li class="item-catalog-cards__item"><a href="" class="item-catalog-cards__link">Смотреть все</a></li>
+                </ul>                
+              </div>
+              <div class="item-catalog-cards__image">
+                <img src="img/mainpage/catalog-cards/02.png" alt="букет">
+              </div>
+            </div>
+            <div class="catalog-cards__item item-catalog-cards">
+              <div class="item-catalog-cards__body">
+                <h3 class="item-catalog-cards__title">
+                  <a href="" class="item-catalog-cards__link-title">Свадебные букеты</a>
+                </h3>
+                <ul class="item-catalog-cards__list">
+                  <li class="item-catalog-cards__item"><a href="" class="item-catalog-cards__link">Розы</a></li>
+                  <li class="item-catalog-cards__item"><a href="" class="item-catalog-cards__link">Пионы</a></li>
+                  <li class="item-catalog-cards__item"><a href="" class="item-catalog-cards__link">Герберы</a></li>
+                  <li class="item-catalog-cards__item"><a href="" class="item-catalog-cards__link">Смотреть все</a></li>
+                </ul>                
+              </div>
+              <div class="item-catalog-cards__image">
+                <img src="img/mainpage/catalog-cards/03.png" alt="букет">
+              </div>
+            </div>
+            <div class="catalog-cards__item item-catalog-cards">
+              <div class="item-catalog-cards__body">
+                <h3 class="item-catalog-cards__title">
+                  <a href="" class="item-catalog-cards__link-title">Композиции</a>
+                </h3>
+                <ul class="item-catalog-cards__list">
+                  <li class="item-catalog-cards__item"><a href="" class="item-catalog-cards__link">Розы</a></li>
+                  <li class="item-catalog-cards__item"><a href="" class="item-catalog-cards__link">Пионы</a></li>
+                  <li class="item-catalog-cards__item"><a href="" class="item-catalog-cards__link">Герберы</a></li>
+                  <li class="item-catalog-cards__item"><a href="" class="item-catalog-cards__link">Смотреть все</a></li>
+                </ul>                
+              </div>
+              <div class="item-catalog-cards__image">
+                <img src="img/mainpage/catalog-cards/04.png" alt="букет">
+              </div>
+            </div>
+            <div class="catalog-cards__item item-catalog-cards">
+              <div class="item-catalog-cards__body">
+                <h3 class="item-catalog-cards__title">
+                  <a href="" class="item-catalog-cards__link-title">Сопутствующие товары</a>
+                </h3>
+                <ul class="item-catalog-cards__list">
+                  <li class="item-catalog-cards__item"><a href="" class="item-catalog-cards__link">Мягкие игрушки</a></li>
+                  <li class="item-catalog-cards__item"><a href="" class="item-catalog-cards__link">Воздушные шары</a></li>
+                  <li class="item-catalog-cards__item"><a href="" class="item-catalog-cards__link">Вкусные наборы</a></li>
+                  <li class="item-catalog-cards__item"><a href="" class="item-catalog-cards__link">Открытки</a></li>
+                </ul>                
+              </div>
+              <div class="item-catalog-cards__image">
+                <img src="img/mainpage/catalog-cards/05.png" alt="букет">
+              </div>
+            </div>
+
+          </div>
+        </section> -->
+
+        <section class="page__hits-products hits-products">
+            <div class="hits-products-slider products-slider">
+                <div class="hits-products-slider__container products-slider__container">
+                    <div class="hits-products-slider__header products-slider__header">
+                        <h2 class="hits-products-slider__title products-slider__title">Хиты продаж</h2>
+                        <a href="catalog.html" class="hits-products-slider__more products-slider__more">Перейти в каталог</a>
+                    </div>
+                    <div class="hits-products-slider__slider products-slider__slider">
+                        <div class="products-slider__swiper">
+
+                        </div>
+                        <div class="hits-products-slider__dots products-slider__dots"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page__info info" id="info">
+          <div class="info__container">
+            <div class="info__wrapper">
+                <picture class="info__bg" >
+                    <source type="image/avif" srcset="img/pixel.avif" data-srcset="img/mainpage/flowers-bg-mini.avif 1x, img/mainpage/flowers-bg.avif 2x" media="(max-width: 767px)">
+                    <source type="image/webp" srcset="img/pixel.webp" data-srcset="img/mainpage/flowers-bg-mini.webp 1x, img/mainpage/flowers-bg.webp 2x" media="(max-width: 767px)">
+                    <source type="image/jpg" srcset="img/pixel.png" data-srcset="img/mainpage/flowers-bg-mini.jpeg 1x, img/mainpage/flowers-bg.jpeg 2x" media="(max-width: 767px)">
+                    <source type="image/avif" srcset="img/pixel.avif" data-srcset="img/mainpage/flowers-bg.avif">
+                    <source type="image/webp" srcset="img/pixel.webp" data-srcset="img/mainpage/flowers-bg.webp">
+
+                    <img src="img/pixel.png" data-nocover width="1590" height="1080" data-src="img/mainpage/flowers-bg.jpeg" alt="Цветы">
+                </picture>
+                <div class="info__content">
+                  <h5 class="info__main-title">Какие цветы выбрать</h5>
+
+                  <ul class="info__list _anim-items _anim-no-hide">
+                      <li class="info__item">Психологи считают, что цветы укрепляют взаимоотношения и сближают людей, повышают самооценку, дарят хорошее настроение, помогают женщине чувствовать себя женщиной — красивой, любимой, счастливой, особенной.</li>
+                      <li class="info__item">
+                          <h3 class="info__title">Какие цветы дарят детям и пожилым людям</h3>
+                          <div class="info__desc">Детям принято вручать маленький округлый букетик цветов. Пожилым людям уместно подарить цветок в горшке, как символ долголетия и здоровья.</div>
+                      </li>
+                      <li class="info__item">
+                          <h3 class="info__title">Какие букеты дарят мужчинам</h3>
+                          <div class="info__desc">Букет для мужчины должен выглядеть просто и без излишеств. «Мужскими» цветами считаются розы, гвоздики, хризантемы, лилии, герберы и тюльпаны.</div>
+                      </li>
+                      <li class="info__item">
+                          <h3 class="info__title">Какие цветы подарить девушке и что они обозначают</h3>
+                          <p class="info__desc">
+                            <span>Ромашки</span> и <span>пионы</span> часто дарят в начале отношений, они символизируют нежность и зарождение романтических чувств.<br>
+                            <span>Ландыши</span> говорят о тайных чувствах.<br>
+                            <span>Хризантемы и ирисы</span> — символы любви, веры и надежды на взаимность.
+                          </p>
+                      </li>
+                      <li class="info__item">
+                          <p class="info__desc">
+                            <span>Букет фиалок</span> расскажет о том, что человек дорожит дружбой. <br>
+                            <span>Розы</span> чаще всего сообщают о любви. Цвет также имеет значение. Розовые и кремовые бутоны означают нежность и искренность, красные — страсть и притяжение.
+                          </p>
+                      </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="page__about about" >
+            <div class="about__container">
+              <h3 class="about__main-title">О нас</h3>
+              <div class="about__holder">
+                  <div class="about__us" id="about">
+                      <p class="about__desc">Интернет-магазин живых цветов ЭКСПРЕСС-БУКЕТ — это цветочная мастерская, в которой трудятся профессиональные флористы, любящие и знающие свое дело. С помощью флористов ЭКСПРЕСС-БУКЕТ вы сможете сами создать подарок, в полной мере выражающий прекрасные чувства. Наряду с готовыми решениями, сотрудники нашей мастерской помогают клиентам с выбором цветов, их размером, цветом и количеством, а также с деталями, играющими не менее важную роль.
+                      </p>
+                      <p class="about__adv-title"> Почему выбирают ЭКСПРЕСС-БУКЕТ:</p>
+                          <ul class="about__adv">
+                              <li class="about__adv-item">Больше 300 композиций и подарков.</li>
+                              <li class="about__adv-item">Круглосуточная доставка цветов курьером.</li>
+                              <li class="about__adv-item">Гарантия качества и свежести.</li>
+                              <li class="about__adv-item">Консультация по любым вопросам за 5 минут: просто отправьте свой вопрос нам в онлайн-чат.</li>
+                          </ul>
+                      <p class="about__desc">Мы работаем в 59 странах мира, собираем больше 160 000 букетов за год!</p>
+                  </div>
+                  <picture class="about__photo">
+                       <source type="image/avif" srcset="img/pixel.avif" data-srcset="img/mainpage/flowersinhands-small.avif 1x, img/mainpage/flowersinhands.avif 2x">
+                      <source type="image/webp" srcset="img/pixel.webp" data-srcset="img/mainpage/flowersinhands-small.webp 1x, img/mainpage/flowersinhands.webp 2x">
+                      <source type="image/jpg" srcset="img/pixel.png" data-srcset="img/mainpage/flowersinhands-small.jpg 1x, img/mainpage/flowersinhands.jpg 2x">
+
+                      <img src="img/pixel.png" width="500" height="500" data-src="img/mainpage/flowersinhands-small.jpg" alt="flowers in hands">
+                  </picture>
+              </div>
+              <div class="about__info tabs" id="payment">
+                  <h3 class="about__title">Оплата и доставка</h3>
+                  <nav class="about__info-navigation">
+                      <button type="submit" data-tab="tab-1" class="about__info-title _tab-active">Способы оплаты</button>
+                      <button type="submit" data-tab="tab-2" class="about__info-title">Доставка</button>
+                  </nav>
+                  <div class="about__body">
+                      <div data-tab-content id="tab-1" class="about__content">
+                          <h5 class="about__subtitle">Платеж онлайн:</h5>
+                          <ul class="about__list">
+                              <li class="about__option">1. Перевод на карту сбербанк онлайн;</li>
+                              <li class="about__option">2. Перевод через термина Тинькофф банк, без комиссии;</li>
+                          </ul>
+                          <h5 class="about__subtitle"> Оплата при доставке:</h5>
+                          <ul class="about__list">
+                              <li class="about__option">1. Оплату вы можете осуществить при доставке лично курьеру;</li>
+                              <li class="about__option">2. Оплата в магазине;</li>
+                          </ul>
+                          <p>Вы можете оплатить в нашем магазине, который находится по адресу г. Москва, ул. Международная, д. 7, офис «26».</p>
+                          <p>Оплата переводом на карту. Вы можете оплатить деньги на карту, после осуществления выбора покупки цветов, вам на почту придет информация (номер карты). Либо после того как вы свяжетесь с флористом по номеру 8-629-741-43-79. Осуществляем доставку цветов только после того как деньги будут зачислены, либо вы можете выслать снимок чека. Если вы не нашли подходящего способа для оплаты, созвонитесь с нашими флористами.</p>
+                      </div>
+                      <div data-tab-content id="tab-2"  class="about__content _hidden">
+                          <h5 class="about__subtitle">Оплата и доставка</h5>
+                          <div class="about__delivery">
+                              <p>Мы работаем для вас ежедневно, осуществляем доставку нашим курьером: 24 часа, семь дней в неделю. Стоимость этой услуги бесплатно от 3000 рублей, кроме праздничных дней, от 500 рублей по городу, от 1000 рублей по России. Для установления стоимости доставки за границу свяжитесь с нашим оператором по номеру 8-629-741-43-79.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </section>
+
+        <!-- <section class="page__sale-products sale-products">         
+          <div class="sale-products-slider products-slider">
+            <div class="sale-products-slider__container products-slider__container">
+                <div class="sale-products-slider__header products-slider__header">
+                    <h2 class="sale-products-slider__title products-slider__title">Специальное предложение</h2>
+                    <a href="" class="sale-products-slider__more products-slider__more">Показать все</a>
+                </div>
+                <div class="sale-products-slider__slider products-slider__slider">
+                    <div class="sale-products-slider__swiper products-slider__swiper">
+        
+                      <div class="sale-products-slider__slide products-slider__slide">
+                            <article class="product-card">
+                                <a href="" class="product-card__image">
+                                    <span class="product-card__item-image-ibg product-card__item-image-ibg_contain">
+                                        <img src="img/mainpage/products-images/pngegg (2).png" alt="Картинка">
+                                    </span>
+                                </a>
+                                <div class="product-card__body">
+                                    <h4 class="product-card__title">
+                                        <a href="" class="product-card__link-title">Свадебный букет 1</a>
+                                    </h4>
+                                    <div class="product-card__info info-product-card">
+                                        <div class="info-product-card__size">20 шт</div>
+                                        <div class="info-product-card__materials">розы</div>
+                                    </div>
+                                    <div class="product-card__rating rating rating_set">
+                                        <div class="rating__body">
+                                            <div class="rating__active"></div>
+                                            <div class="rating__items">
+                                                <input type="radio" class="rating__item" value="1" name="rating">
+                                                <input type="radio" class="rating__item" value="2" name="rating">
+                                                <input type="radio" class="rating__item" value="3" name="rating">
+                                                <input type="radio" class="rating__item" value="4" name="rating">
+                                                <input type="radio" class="rating__item" value="5" name="rating">
+                                            </div>                                    
+                                        </div>
+                                        <div class="rating__value">0</div>
+                                        <div class="rating__info">12 отзывов</div>
+                                    </div>
+                                    <div class="product-card__footer">
+                                        <div class="product-card__price">2700 р.</div>
+                                        <a href="" class="product-card__compare _icon-compare"></a>
+                                        <a href="" class="product-card__favourite _icon-favourite"></a>
+                                    </div>
+                                    <button class="product-card__cart button"><span class="">В корзину
+                                        </span><img src="img/icons/cart-white.svg" alt="иконка корзины">
+                                    </button>
+                                </div>
+                            </article>
+                      </div>
+
+                      <div class="sale-products-slider__slide products-slider__slide">
+                          <article class="product-card">
+                              <a href="" class="product-card__image">
+                                  <span class="product-card__item-image-ibg product-card__item-image-ibg_contain">
+                                      <img src="img/mainpage/products-images/fonwall.ru_plant-flower-purple-petal-srfa (2).jpeg" alt="Картинка">
+                                  </span>
+                              </a>
+                              <div class="product-card__body">
+                                  <h4 class="product-card__title">
+                                      <a href="" class="product-card__link-title">Свадебный букет2</a>
+                                  </h4>
+                                  <div class="product-card__info info-product-card">
+                                      <div class="info-product-card__size">20 шт</div>
+                                      <div class="info-product-card__materials">розы</div>
+                                  </div>
+                                  <div class="product-card__rating rating rating_set">
+                                      <div class="rating__body">
+                                          <div class="rating__active"></div>
+                                          <div class="rating__items">
+                                              <input type="radio" class="rating__item" value="1" name="rating">
+                                              <input type="radio" class="rating__item" value="2" name="rating">
+                                              <input type="radio" class="rating__item" value="3" name="rating">
+                                              <input type="radio" class="rating__item" value="4" name="rating">
+                                              <input type="radio" class="rating__item" value="5" name="rating">
+                                          </div>                                    
+                                      </div>
+                                      <div class="rating__value">0</div>
+                                      <div class="rating__info">12 отзывов</div>
+                                  </div>
+                                  <div class="product-card__footer">
+                                      <div class="product-card__price">2700 р.</div>
+                                      <a href="" class="product-card__compare _icon-compare"></a>
+                                      <a href="" class="product-card__favourite _icon-favourite"></a>
+                                  </div>
+                                  <button class="product-card__cart button"><span class="">В корзину</span><img src="img/icons/cart-white.svg" alt="иконка корзины"></button>
+                              </div>
+                          </article>
+                      </div>
+
+                      <div class="sale-products-slider__slide products-slider__slide">
+                        <article class="product-card">
+                            <a href="" class="product-card__image">
+                                <span class="product-card__item-image-ibg product-card__item-image-ibg_contain">
+                                    <img src="img/mainpage/products-images/thomas-william-T4sn1Nw1f98-unsplash.jpg" alt="Картинка">
+                                </span>
+                            </a>
+                            <div class="product-card__body">
+                                <h4 class="product-card__title">
+                                    <a href="" class="product-card__link-title">Свадебный букет3</a>
+                                </h4>
+                                <div class="product-card__info info-product-card">
+                                    <div class="info-product-card__size">20 шт</div>
+                                    <div class="info-product-card__materials">розы</div>
+                                </div>
+                                <div class="product-card__rating rating rating_set">
+                                    <div class="rating__body">
+                                        <div class="rating__active"></div>
+                                        <div class="rating__items">
+                                            <input type="radio" class="rating__item" value="1" name="rating">
+                                            <input type="radio" class="rating__item" value="2" name="rating">
+                                            <input type="radio" class="rating__item" value="3" name="rating">
+                                            <input type="radio" class="rating__item" value="4" name="rating">
+                                            <input type="radio" class="rating__item" value="5" name="rating">
+                                        </div>                                    
+                                    </div>
+                                    <div class="rating__value">0</div>
+                                    <div class="rating__info">12 отзывов</div>
+                                </div>
+                                <div class="product-card__footer">
+                                    <div class="product-card__price">2700 р.</div>
+                                    <a href="" class="product-card__compare _icon-compare"></a>
+                                    <a href="" class="product-card__favourite _icon-favourite"></a>
+                                </div>
+                                <button class="product-card__cart button"><span class="">В корзину</span><img src="img/icons/cart-white.svg" alt="иконка корзины"></button>
+                            </div>
+                        </article>
+                      </div>
+                
+                    </div>
+                    <div class="sale-products-slider__dots products-slider__dots"></div>
+                </div>
+            </div>
+          </div> 
+        </section>  -->
+        <!-- <a href="test.html">
+          <div class="test" style="width:50px;height:50px; background-color: blue;"></div>
+        </a> -->
+
+      </main>
+
+      <footer class="footer">
+    <!-- <section class="footer__text text-footer">
+        <div class="text-footer__container">
+            <h1 class="text-footer__title">Интернет-магазин цветов</h1>
+            <div class="text-footer__text">Наша компания существует уже более 10 лет на рынке. За это время цветочный бизнес претерпел множество изменений - стал гораздо удобнее и доступнее для каждого жителя города. Мы приобрели огромный опыт в создании букетов и композиций и всегда рады предложить вам новое! Мы можем предоставить вам первоклассный сервис, бережную доставку цветов и безупречное качество.</div>
+        </div>
+    </section> -->
+    <div class="footer__container">
+        <div class="footer__body body-footer">
+            <div class="body-footer__row1">
+                <div class="body-footer__item item-footer">
+                    <div data-spollers="767.98" class="item-footer__spoller spoller-item-footer">
+                        <div class="spoller-item-footer__item">
+                            <button type="button" data-spoller class="spoller-item-footer__title">Информация</button>
+                            <div class="spoller-item-footer__body">
+                                <nav class="menu-footer">
+                                    <ul class="menu-footer__list">
+                                        <li class="menu-footer__item">
+                                            <a href="#!" class="menu-footer__link" data-scroll="about">О нас</a>
+                                        </li>
+                                        <li class="menu-footer__item">
+                                            <a href="#!" class="menu-footer__link" data-scroll="payment">Условия оплаты и доставки</a>
+                                        </li>
+                                        <li class="menu-footer__item">
+                                            <a href="#!" class="menu-footer__link">Новости</a>
+                                        </li>
+                                        <li class="menu-footer__item item-footer">
+                                            <form id="subscribe-form" action="#" class="spoller-item-footer__body footer-subscribe">
+                                                <label for="subscribe-input" class="footer-subscribe__label">Подпишитесь прямо сейчас!</label>
+                                                <div class="footer-subscribe__line">
+                                                    <input id="subscribe-input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-required="email" placeholder="example@gmail.com" class="footer-subscribe__input _req _email">
+                                                    <button type="submit" class="footer-subscribe__button _icon-arrowup" aria-label="Subscribe" ></button>
+                                                </div>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body-footer__item item-footer">
+                    <div data-spollers="767.98" class="item-footer__spoller spoller-item-footer">
+                        <div class="spoller-item-footer__item">
+                            <button type="button" data-spoller class="spoller-item-footer__title">Каталог</button>
+                            <div class="spoller-item-footer__body">
+                                <nav class="menu-footer">
+                                    <ul class="menu-footer__list">
+                                        <li class="menu-footer__item">
+                                            <a href="catalog.html" class="menu-footer__link">Монобукеты</a>
+                                        </li>
+                                        <li class="menu-footer__item">
+                                            <a href="catalog.html" class="menu-footer__link">Свадебные букеты</a>
+                                        </li>
+                                        <li class="menu-footer__item">
+                                            <a href="catalog.html" class="menu-footer__link">Композиции</a>
+                                        </li>
+                                        <li class="menu-footer__item">
+                                            <a href="catalog.html" class="menu-footer__link">Авторские букеты</a>
+                                        </li>
+                                        <li class="menu-footer__item">
+                                            <a href="catalog.html" class="menu-footer__link">Сопутствующие товары</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body-footer__item item-footer">
+                    <div data-spollers="767.98" class="item-footer__spoller spoller-item-footer">
+                        <div class="spoller-item-footer__item">
+                            <button type="button" data-spoller class="spoller-item-footer__title">Дополнительно</button>
+                            <div class="spoller-item-footer__body">
+                                <nav class="menu-footer">
+                                    <ul class="menu-footer__list">
+                                        <li class="menu-footer__item">
+                                            <a href="#!" class="menu-footer__link">Партнеры</a>
+                                        </li>
+                                        <li class="menu-footer__item">
+                                            <a href="#!" class="menu-footer__link">Цветы со скидкой</a>
+                                        </li>
+                                        <li class="menu-footer__item">
+                                            <a href="#!" class="menu-footer__link">Полезные статьи</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body-footer__item item-footer">
+                    <div data-spollers="767.98" class="item-footer__spoller spoller-item-footer">
+                        <div class="spoller-item-footer__item">
+                            <button type="button" data-spoller class="spoller-item-footer__title">Личный кабинет</button>
+                            <div class="spoller-item-footer__body">
+                                <nav class="menu-footer">
+                                    <ul class="menu-footer__list">
+                                        <li class="menu-footer__item">
+                                            <a href="personal.html" data-popup="login" class="menu-footer__link popup-link">Личный кабинет</a>
+                                        </li>
+                                        <li class="menu-footer__item">
+                                            <button data-popup="login" class="menu-footer__link popup-link">История заказов</button>
+                                        </li>
+                                        <li class="menu-footer__item">
+                                            <a href="#!" data-popup="login" class="menu-footer__link">Мои закладки</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-footer__row2" id="contacts">
+                    <div class="body-footer__item item-footer">
+                        <div class="item-footer__spoller spoller-item-footer">
+                            <div class="spoller-item-footer__item">
+                                <button type="button" class="spoller-item-footer__title">Контакты</button>
+                                <div class="spoller-item-footer__body">
+                                    <nav class="menu-footer">
+                                        <ul class="menu-footer__list">
+                                            <li class="menu-footer__item">
+                                                <a href="tel:88007774967" class="menu-footer__link _icon-phone">8 (800) 777-49-67</a>
+                                            </li>
+                                            <li class="menu-footer__item">
+                                                <div class="menu-footer__item-block">
+                                                    <div class="menu-footer__item-img">
+                                                        <img src="img/icons/clock.svg" alt="clock" width="15" height="15">
+                                                    </div>
+                                                    <p>Пн-Вс </p>
+                                                    <p>7:00 — 21:00 (мск)</p>
+                                                </div>
+                                            </li>
+                                            <li class="menu-footer__item _icon-location">
+                                                <div>
+                                                    <p>г.Москва,</p>
+                                                    <p>ул. Международная,</p>
+                                                    <p>д.7, офис «26»</p>
+                                                </div>
+                                            </li>
+                                            <li class="menu-footer__item">
+                                                <a href="mailto:info@flowershop.ru" class="menu-footer__link">
+                                                    <div class="menu-footer__item-img">
+                                                        <img class="menu-footer__item-img" src="img/icons/mail.svg" alt="mail" width="15" height="15">
+                                                    </div>
+                                                    info@flowershop.ru
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    <ul class="social-footer">
+                                        <li class="social-footer__item">
+                                            <a href="http://facebook.com" class="social-footer__link">
+                                                <img src="img/icons/facebook.png" alt="facebook-icon" width="45" height="45">
+                                            </a>
+                                        </li>
+                                        <li class="social-footer__item">
+                                            <a href="http://telegram.org" class="social-footer__link">
+                                                <img src="img/icons/telegram.png" alt="telegram-icon" width="45" height="45">
+                                            </a>
+                                        </li>
+                                        <li class="social-footer__item">
+                                            <a href="http://viber.com" class="social-footer__link">
+                                                <img src="img/icons/viber.png" alt="viber-icon" width="45" height="45">
+                                            </a>
+                                        </li>
+                                        <li class="social-footer__item">
+                                            <a href="http://whatsapp.com" class="social-footer__link">
+                                                <img src="img/icons/whatsapp.png" alt="whatsapp-icon" width="45" height="45">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-footer__item item-footer">
+                        <div id="map" class="body-footer__map" data-iframe="https://yandex.ru/map-widget/v1/?ll=37.682803%2C55.745802&mode=usermaps&source=constructorStatic&um=constructor%3A2777a2106065fe2d7f05f52150582ee89211c69ce183021412bf9504910e6661&z=17" frameborder="1" allowfullscreen="true" style="position:relative;"></div>
+
+                        <!-- <div id="map" class="body-footer__map map" style="position:relative;overflow:hidden;">                            
+                            <iframe src="https://yandex.ru/map-widget/v1/?ll=37.682803%2C55.745802&mode=usermaps&source=constructorStatic&um=constructor%3A2777a2106065fe2d7f05f52150582ee89211c69ce183021412bf9504910e6661&z=17" frameborder="1" allowfullscreen="true" loading="lazy" style="position:relative;"></iframe>
+                            
+                        </div>                        -->
+                    </div>
+
+                    <!-- <div class="body-footer__item item-footer">
+                        <div data-spollers="767.98" class="item-footer__spoller spoller-item-footer">
+                            <div class="spoller-item-footer__item">
+                                <button type="button" data-spoller class="spoller-item-footer__title">Полезные ссылки</button>
+                                <div class="spoller-item-footer__body">
+                                    <nav class="menu-footer">
+                                        <ul class="menu-footer__list">
+                                            <li class="menu-footer__item">
+                                                <a href="" class="menu-footer__link">Способы доствки и оплаты</a>
+                                            </li>                                            
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>                    
+                    <div class="body-footer__item item-footer">
+                        <div data-spollers="767.98" class="item-footer__spoller spoller-item-footer">
+                            <div class="spoller-item-footer__item">
+                                <button type="button" data-spoller class="spoller-item-footer__title">Наша гарантия</button>
+                                <div class="spoller-item-footer__body">
+                                    <div class="spoller-item-footer__text">
+                                        Недовольны своей покупкой? 
+                                        Вы можете вернуть ее в течении 
+                                        30 дней с даты получения,
+                                        согласно <a href="">нашим правилам</a>
+                                    </div>                                    
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="body-footer__item item-footer">
+                        <div data-spollers="767.98" class="item-footer__spoller spoller-item-footer">
+                            <div class="spoller-item-footer__item">
+                                <button type="button" data-spoller class="spoller-item-footer__title">Новостная рассылка</button>
+                                <form id="subscribe-form" action="#" class="spoller-item-footer__body footer-subscribe">
+                                    <label for="subscribe-input" class="footer-subscribe__label">Подпишитесь прямо сейчас!</label>
+                                    <div class="footer-subscribe__line">
+                                        <input id="subscribe-input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-required="email" placeholder="example@gmail.com" class="footer-subscribe__input _req _email"> 
+                                        <button type="submit" class="footer-subscribe__button _icon-arrowup" ></button>
+                                    </div>                            
+                                </form>
+                            </div> 
+                        </div>
+                    </div> -->
+            </div>
+            <div class="body-footer__bottom ">
+                <div class="body-footer__rules">
+                    Все материалы, размещенные на сайте, носят справочный характер и не являются публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса Российской Федерации.
+                </div>
+                <div class="body-footer__copy">
+                    <span>Правовая информация</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    </div>
+    <script defer src="js/app.min.js?_v=20231213145009"></script>
+  </body>
+</html>
